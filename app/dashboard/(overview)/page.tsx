@@ -1,5 +1,5 @@
 import CardWrapper from '@/app/ui/dashboard/cards';
-import { Card } from '@/app/ui/dashboard/cards';
+// import { Card } from '@/app/ui/dashboard/cards';
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
@@ -17,10 +17,15 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
+  
   const {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     numberOfInvoices,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     numberOfCustomers,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     totalPaidInvoices,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     totalPendingInvoices,
   } = await fetchCardData();
   return (
